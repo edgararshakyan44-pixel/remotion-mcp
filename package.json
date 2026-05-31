@@ -1,0 +1,17 @@
+{
+  "name": "remotion-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Remotion video rendering",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:local": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@remotion/bundler": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "express": "^5.2.1"
+  }
+}
