@@ -46,10 +46,11 @@ ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm install --production
+RUN npm install
 
 COPY server.js ./
 COPY index.js ./
+COPY src/ ./src/
 
 EXPOSE 3000
 
